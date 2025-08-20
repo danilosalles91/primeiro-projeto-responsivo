@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    
+}
+
+.menu {
+    margin: 44px 0 144px 76px;
+}
+
+.link-menu {
+    color: #989D9C;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 3vw;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.link-menu:hover {
+    opacity: 0.16;
+}
+
+.link-menu:active {
+    opacity: 0.8;
+}
+
+.button-menu {
+    color: #FFF;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 2vw;
+    width: 6.5vw;
+    height: 5vh;
+    border-radius: 10vw;
+    border: none;
+    background: #665AE1;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.button-menu:hover {
+    opacity: 0.16;
+}
+
+.button-menu:active {
+    opacity: 0.8;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8vw;
+    margin-left: 8vw;
+}
+
+.text {
+    max-width: 300vw;
+    justify-content: left;
+}
+
+.image-main {
+    width: 30vw;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 0;
+    margin-left: 120px;
+}
+
+h1 {
+    color: #515151;
+    font-size: 7vw;
+    font-weight: 900;
+    line-height: normal;
+    margin: 20px;
+}
+
+h2 {
+    color: #515151;
+    font-size: 5vh;
+    font-weight: 500;
+    line-height: normal;
+    margin: 1vh;
+}
+
+p {
+    color: #848484;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1vw;
+}
+
+.button-main {
+    background: #ADFF00;
+    border-radius: 10vw;
+    width: 8vw ;
+    height: 5vh;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button-main:hover {
+    opacity: 0.5;
+}
+
+.button-main:active {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 763px) {
+    .menu {
+        display: none;
+    }
+
+      .container {
+        flex-direction: column; /* <<< ISSO faz a imagem ir para cima do texto */
+        align-items: center;    /* centraliza no eixo horizontal */
+        margin-left: 0;         /* remove o deslocamento lateral */
+        gap: 20px;              /* espaço entre imagem e texto */
+    }
+
+    p {
+        display: none;
+    }
+
+    .image-main {
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        margin-top: 20vh;
+        margin-left: 10vw;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 10vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 6vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button-main {
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        font-size: 5vw;
+        margin-top: 2vh;
+        margin-left: 5vw;
+    }
+}
