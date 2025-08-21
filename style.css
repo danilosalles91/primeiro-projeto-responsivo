@@ -125,10 +125,10 @@ p {
     }
 
       .container {
-        flex-direction: column; /* <<< ISSO faz a imagem ir para cima do texto */
-        align-items: center;    /* centraliza no eixo horizontal */
-        margin-left: 0;         /* remove o deslocamento lateral */
-        gap: 20px;              /* espaço entre imagem e texto */
+        flex-direction: column; 
+        align-items: center;    
+        margin-left: 0;         
+        gap: 20px;            
     }
 
     p {
